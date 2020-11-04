@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 try:
     import clipboard
     from pyperclip import PyperclipException

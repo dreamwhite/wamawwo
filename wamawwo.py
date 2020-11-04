@@ -6,14 +6,12 @@ try:
 except ImportError:
     clipboard_support = False
 
-
 def wamawwo(string):
     return ''.join([letter.replace("r", "w") if letter == "r" else letter.replace("R", "W") for index, letter in enumerate(string)])
 
 phrase = input(wamawwo('Input phrase to Wamawwizzawe: '))
 print('----------------------------------------------')
 wamawwo_phrase = wamawwo(phrase)
-
 if clipboard_support:
     try:
         clipboard.copy(wamawwo_phrase)
